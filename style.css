@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.img-fond {
+    position: fixed;
+    top: -300px;
+    width:  100vw;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1345px) {
+    .img-fond {
+      top: -200px;
+    }
+  }
+@media screen and (max-width: 1000px) {
+    .img-fond {
+      top: -100px;
+    }
+  }
+@media screen and (max-width: 510px) {
+    .img-fond {
+      top: 0px;
+    }
+  }
+
+
+
+.fond {
+    background-color: #333;
+    min-height: 100vh;
+    z-index: 1;
+    position: relative;
+    top: 58vh;
+    animation: reveal linear both;
+    animation-timeline: view(block);
+    animation-range: cover 20% cover 85%;
+}
+
+@keyframes reveal {
+        from {
+          top: 58vh;
+        }
+      
+        to {
+            top: 0;
+        }
+}
+
+
+.btn-1 .accordion-button:not(.collapsed) {
+    background-color: #00a30055 !important;
+}
+.btn-2 .accordion-button:not(.collapsed) {
+    background-color: #ff000055 !important;
+}
+.btn-3 .accordion-button:not(.collapsed) {
+    background-color: #ffff0055 !important;
+}
